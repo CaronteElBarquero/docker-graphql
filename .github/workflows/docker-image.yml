@@ -25,12 +25,12 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
 
     - name: Build Docker Image
-      run: |
+      run:  |
         docker build -t caronteelbarquero/docker-graphql:0.0.2 .
 
     - name: Push Docker Image
-      run: |
-        docker push caronteelbarquero/docker-graphql:0.0.2 .
+      run:  |
+        docker push caronteelbarquero/docker-graphql:0.0.2
 
         
       
